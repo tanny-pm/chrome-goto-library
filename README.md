@@ -1,2 +1,38 @@
-# chrome-goto-library
-A browser extension that connects online bookstore searches with public library availability.
+# Amazon to Calil Chrome Extension
+
+## 概要
+
+このChrome拡張機能は、Amazonで本を検索したときに、その本に該当するカーリルのページを簡単に開けるボタンをAmazonの詳細ページに追加します。
+
+## 主な機能
+
+- Amazonの本の詳細ページに、対応するカーリルのリンクを追加するボタンを表示します。
+- ボタンをクリックすると、カーリルのページが別タブで開きます。
+
+## インストール方法
+
+1. **このリポジトリをクローンまたはダウンロード**:
+    ```bash
+    git clone https://github.com/yourusername/amazon-to-calil-extension.git
+    ```
+    または、[リポジトリのダウンロードリンク](https://github.com/yourusername/amazon-to-calil-extension/archive/refs/heads/main.zip)からZIPファイルをダウンロードして解凍します。
+
+2. **Chromeの拡張機能ページに移動**:
+   - Chromeを開き、`chrome://extensions/` にアクセスします。
+   - 右上の「デベロッパーモード」をオンにします。
+
+3. **拡張機能を読み込む**:
+   - 「パッケージ化されていない拡張機能を読み込む」ボタンをクリックします。
+   - ダウンロードまたはクローンしたフォルダーを選択します。
+
+4. **拡張機能が追加される**:
+   - Amazonの本の詳細ページに移動し、カーリルのリンクが追加されたボタンを確認します。
+
+## 使用方法
+
+1. **Amazonで本を検索**:
+   - Amazonの本の詳細ページに移動します。
+
+2. **ボタンをクリック**:
+   - ページに追加された「図書館でさがす」ボタンをクリックすると、対応するカーリルのページが別タブで開きます。
+   
