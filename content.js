@@ -16,14 +16,35 @@ function getISBN() {
 function addCalilButton(isbn) {
   let button = document.createElement("button");
   button.textContent = "Calilで確認";
-  button.style.marginTop = "10px"; // ボタンのスタイル調整
 
-  // ボタンを<h1 id="title">の下に挿入
-  let titleElement = document.querySelector("h1#title");
-  if (titleElement) {
-    titleElement.insertAdjacentElement("afterend", button);
+  // ボタンのデザインを指定
+  button.style.width = "100%"; // 左右に目一杯広げる
+  button.style.height = "29px"; // 左右に目一杯広げる
+  button.style.padding = "1px 6px"; // 上下1px, 左右6pxのパディング
+  button.style.textAlign = "center"; // 文字を中央に配置
+  button.style.color = "white"; // 文字色を白に
+  button.style.border = "none"; // ボーダーを消す
+  button.style.backgroundColor = "#2ab6e9"; // 背景色を#2ab6e9に
+  button.style.cursor = "pointer"; // マウスオーバー時のカーソルをポインタに
+  button.style.fontSize = "14px"; // フォントサイズを指定
+  button.style.marginBottom = "8px"; // 下に8pxのマージンを追加
+  button.style.borderRadius = "100px"; // 角を丸める（5pxの半径）
+
+  // マウスオーバー時の効果を追加
+  button.onmouseover = function () {
+    button.style.backgroundColor = "#249cc5"; // 少し暗い色に
+  };
+  button.onmouseout = function () {
+    button.style.backgroundColor = "#2ab6e9"; // 元の色に戻す
+  };
+
+  // ボタンを<div id="addToCart_feature_div">の上に挿入
+  let addToCartElement = document.getElementById("addToCart_feature_div");
+  if (addToCartElement) {
+    addToCartElement.insertAdjacentElement("beforebegin", button);
   }
 
+  // ボタンをクリックするとカーリルのページを新しいタブで開く
   button.onclick = function () {
     window.open(`https://calil.jp/book/${isbn}`, "_blank");
   };
