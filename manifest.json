@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon to Calil",
+  "version": "1.0",
+  "description": "Amazonの本の詳細ページにカーリルのボタンを追加します。",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.amazon.co.jp/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
