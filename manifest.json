@@ -2,11 +2,24 @@
   "manifest_version": 3,
   "name": "Amazon to Calil",
   "version": "1.0",
-  "description": "Amazonの本の詳細ページにカーリルのボタンを追加します。",
+  "description": "Amazonの本の詳細ページに、対応するカーリルのリンクを追加します。",
   "permissions": [
-    "activeTab",
-    "scripting"
+    "activeTab"
   ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Amazon to Calil"
+  },
   "content_scripts": [
     {
       "matches": [
